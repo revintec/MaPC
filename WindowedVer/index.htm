@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MaPC</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="window.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>AAA
+	<div id="Overall" style="background-image:url(overall.png);position:fixed;left:0;top:0;right:0;bottom:0;z-index:10001;background-size:100% 100%;transition:all 0.3s;opacity:1"></div>
+	<div class="Templates">
+		<div id="BasicIntel" class="Clipper" style="height:100%">
+			<div class="Layout" style="width:240px;">
+				<div style="width:100px;height:100px;float:left">
+					<div id="HelpCoin" style="position:absolute;left:80px;opacity:0;transition:all 1s;background:rgba(222,222,222,0.8);pointer-events:none;border-radius:3px;border:3px solid #333;box-shadow:1px 1px 3px #000;padding:8px">
+						积分有什么用呢?<br>
+						毛线用也没有...<br>
+						不过可以用来做Demo时显示帮助<br>
+						呵呵,开玩笑,以后会有用的(吧)
+					</div>
+					<div class="Row" style="text-align:right">账户</div>
+					<div class="Row" style="text-align:right">昵称</div>
+					<div class="Row" style="text-align:right" onmouseover="$('#HelpCoin').style.opacity=1;" onmouseout="$('#HelpCoin').style.opacity=0">积分(?)</div>
+				</div>
+				<div style="height:100px;float:left">
+					<div class="Row" style="box-shadow:inset 1px 1px 3px #000;">caoyunbin</div>
+					<div class="Row" id="InputNickname" style="box-shadow:inset 1px 1px 3px #000;background:#ccc;width:100px;">我是大好人</div>
+					<div class="Row" style="box-shadow:inset 1px 1px 3px #000;">2147483648</div>
+				</div>
+				<div style="clear:both"><br></div><hr>
+				<div id="ButtonCustomize" class="Row" style="cursor:pointer;border-radius:3px;background:#ccc;border:1px solid #ccc;text-align:center;box-shadow:1px 1px 3px #000"></div>
+				<div class="Row" style="padding-left:18px"><input type="checkbox">接收美食消息<br></div>
+				<div class="Row" style="padding-left:18px"><input type="checkbox">接收旅游消息<br></div>
+				<div class="Row" style="padding-left:18px"><input type="checkbox">接收购物消息<br></div>
+				<hr>
+				<div>装逼类型:</div>
+				<div class="Row" style="padding-left:30px">
+				<input name="skin" type="radio" checked="true" onclick="$('.WindowArea').style.backgroundImage='url(res/bg1.png)'">弱智白
+				&nbsp;&nbsp;
+				<input name="skin" type="radio" onclick="$('.WindowArea').style.backgroundImage='url(res/bg2.png)'">装逼黑<br>
+				</div>
+				改背景 炫女友,炫工作 <button style="float:right" onclick="crash()">上传图片</button>
+			</div>
+		</div>
+	</div>
+	<div class="WindowArea">
+		<div class="TipArea">
+			<div class="Tip" id="Tip1">
+				今日天气: 世界末日<br>
+				出行建议: 宅在家<br>
+				穿衣建议: 啥也别穿<br>
+				限行尾号: 0~9
+				<img src="res/hell.png" alt="" style="position:absolute;top:0;height:100%;right:0">
+			</div>
+			<div class="Tip" id="Tip2">
+				<div style="margin:8px;font-size:180%">运营活动</div>
+				<div style="text-decoration:line-through">公司都TM要倒闭了,欠了一屁股债</div>
+				购买公司债券,获取千倍收益!
+				买的越多,收益越多,更有一键将您所有资产购买成债券等人性化功能,快快行动吧!
+			</div>
+			<div class="Tip" id="Tip3">
+				<div style="margin:8px;;font-size:180%">版本更新</div>
+				为了让您的使用更有挑战性,我们在这一版很人性化的加入了许多BUG.<br>
+				您将能体验到:更多的崩溃,更多错误,更容易损坏您的数据.<br>
+				加入了一键将您名下所有资产转入百度的功能,取消了"撤销资产转移"功能.
+			</div>
+		</div>
+	</div>
+	<div class="TaskMgmt">
+		<div class="TaskMgmtStatus">Blalala...</div>
+	</div>
+	<div class="GlobalControls">
+		<div id="GlExit" class="Control" onclick="UI.defaultManager.destroy()"></div>
+	</div>
+	<div class="Testings">
+		<button id="TEST2">TEST:WindowDisabledStateToggle1</button>
+		<button id="TEST3">TEST:AddNewWindow</button>
+		<button id="TEST4">TEST:ClearOneGeneratedWindow</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+.Templates{display:none;}
+.Clipper{position:relative;overflow:hidden;}
+.Row{height:26px;/*outline:1px solid #f00;*/font-size:18px;margin:3px 8px;padding:3px 8px;}
+.Crash{
+    background-image: url(res/blue.jpg);
+    background-size: 100% 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+#Collection .Content{
+    background-image: url(design/collection.png);
+    background-repeat: no-repeat;
+    /*background-size: 100% 100%;*/
+}
+#Nearby .Content{
+    background-image: url(design/nearby.png);
+    background-repeat: no-repeat;
+    /*background-size: 100% 100%;*/
+}
+#Roadmap .Content{
+    background-image: url(design/roadmap.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#WinRand .Content{
+    background-image: url(design/basic.png);
+    background-repeat: no-repeat;
+    /*background-size: 100% 100%;*/
+}
+.TaskMgmt{
+    position: fixed;
+    background: rgba(100,100,100,0.95);
+    overflow-y: scroll;
+    left: 0;
+    top: 0;
+    width: 100px;
+    bottom: 60px;
+    cursor: default;
+}
+.TaskMgmtStatus{
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+}
+.GlobalControls{
+    position: fixed;
+    background: rgba(100,100,100,0.95);
+    left: 0;
+    height: 60px;
+    width: 100px;
+    bottom: 0;
+    padding: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+#GlExit{
+    background: url(res/gl.exit.png) 100% 100%;
+    margin: 10px auto;
+    width: 32px;
+    height: 32px;
+}
+.TaskMgmt::-webkit-scrollbar{
+    display: none;
+}
+.WindowArea{
+    position: fixed;
+    left: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: default;
+    background-image: url(res/bg1.png);
+    background-size: 100% 100%;
+}
+.TipArea{
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    right: 30px;
+    bottom: 30px;
+}
+.TipArea .Tip{
+    position: relative;
+    margin-bottom: 8px;
+    background: #ee0;
+    border-radius: 8px;
+    border: 3px solid #880;
+    box-shadow: 3px 3px 8px #000;
+    padding: 8px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.Avatar{
+    transition: all 0.3s;
+    background-size: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    opacity: 0.3;
+}
+.Avatar.Active{
+    border: 3px solid #f00;
+}
+.Window{
+    position: absolute;
+    border: 3px solid #00f;
+    border-radius: 8px;
+    left: 100px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+.Window.Active{
+    box-shadow: 3px 3px 8px #000;
+}
+body.Buzzkiller .Window.Active{
+    box-shadow: inherit;
+}
+.Bubble{
+    position: absolute;
+    background-size: 100%;
+    left: -30px;
+    top: -30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+.Title{
+    position: absolute;
+    overflow: hidden;
+    background: #000;
+    color: #ccc;
+    transition: all 0.3s;
+    left: 30px;
+    top: 0;
+    right: 0;
+    height: 30px;
+    padding: 0 0 0 80px;
+    font-size: 24px;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+.Title .Controls{
+    float: right;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 3px 0 3px 3px;
+    cursor: pointer;
+}
+.Title .Controls .Control{
+    float: right;
+    height: 100%;
+    width: 24px;
+    outline: 1px solid #00f;
+    border: 1px solid #f00;
+    margin-right: 3px;
+    box-sizing: border-box;
+}
+.Title .Controls #Close{
+    background: url(res/gl.wzzz.png);
+}
+.Title .Controls #Maximize{
+    background: url(res/gl.wooo.png);
+}
+.Window.Active .Title{
+    background: #f00;
+    color: #000;
+}
+.Window.Active .Bubble{
+    border: 3px solid #f00;
+}
+.Content{
+    position: absolute;
+    background: rgba(180,180,180,0.75);
+    left: 0;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    cursor: auto;
+}
+.Content{
+    padding: 30px;
+}
+.Testings{
+    position: fixed;
+    width: 1px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+}
+.Testings button{
+    float: right;
+    font-size: 18px;
+}

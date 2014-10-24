@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAPC.Design#2</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="header.js"></script>
+    <script>
+    HEADER(function(HEADER){
+        HEADER.newTab({title:"附近搜索",elem:{content:"<img src='design/nearby.png'>"}});
+        HEADER.newTab({title:"足迹"   ,elem:{content:"<img src='design/roadmap.png'>"}});
+        HEADER.newTab({title:"收藏"   ,elem:{content:"<img src='design/collection.png'>"}});
+        HEADER.newTab({title:"基本信息",elem:{content:"<img src='design/basic.png'>"}});
+        HEADER.activeTab(2);
+        HEADER.setPushmsgs("活动通知: 用百度地图,放心回(老)家~~");
+        HEADER.setControls("欢迎使用熊掌地图,<span class='Username'>CSS</span>退不出");
+        HEADER.internal.$("#OVERALL").addEventListener("click",function(ev){
+            ev.target.style.opacity=0;
+            setTimeout(function(){ev.target.remove();},800);
+        });
+    });
+    </script>
+    <style>.Content>img{width:100%;height:100%;}</style>
+</head>
+<body>
+    <div id="OVERALL" style="position:fixed;left:0;top:0;right:0;bottom:0;background-image:url(overall.png);transition:all 0.8s;background-size:100% 100%;z-index:1000"></div>
+    <div id="HEADER">
+        <div id="Upper">
+            <div id="Push"></div>
+            <div id="Controls"></div>
+        </div>
+        <div id="Lower">
+            <div id="Logo"></div>
+            <div id="Tabs">
+                <div id="Slider"></div>
+            </div>
+        </div>
+    </div>
+    <div id="CONTENT"></div>
+</body>
+</html>

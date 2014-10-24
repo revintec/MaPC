@@ -1,0 +1,93 @@
+#HEADER{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 86px;
+}
+#HEADER #Upper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    right: 0;
+    background: #f6fafd;
+}
+#HEADER #Lower{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    height: 56px;
+    right: 0;
+    background: #fff;
+}
+#HEADER #Push{
+    position: absolute;
+    font-size: 12px;
+    color: #8296ab;
+    left: 0;
+    top: 0;
+    right: 300px;
+    bottom: 0;
+    padding: 8px 30px;
+}
+#HEADER #Controls{
+    position: absolute;
+    font-size: 14px;
+    color: #999;
+    top: 0;
+    width: 300px;
+    right: 0;
+    bottom: 0;
+    padding: 8px 25px;
+    text-align: right;
+}
+#HEADER .Username{
+    font-size: 18px;
+    color: #207dff;
+    margin: 0 10px 0 15px;
+}
+#HEADER #Logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    bottom: 0;
+    background: url(logo.fw.png) 30px 8px no-repeat;
+}
+#HEADER #Tabs{
+    position: absolute;
+    overflow: hidden;
+    left: 250px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+#HEADER .Tab{
+    display: inline-block;
+    transition: all 0.3s;
+    font-size: 20px;
+    color: #999;
+    padding: 13px 25px 20px 25px;
+    cursor: default;
+}
+#HEADER .Tab.Active{color:#207dff;}
+#HEADER #Slider{
+    position: absolute;
+    transition: all 0.3s;
+    background: #207dff;
+    height: 2px;
+    bottom: 0;
+}
+#CONTENT{
+    position: fixed;
+    left: 0;
+    top: 86px;
+    right: 0;
+    bottom: 0;
+}
+#CONTENT .Content{display:none;}
+#CONTENT .Content.Active{display:block;}
+
+
+
